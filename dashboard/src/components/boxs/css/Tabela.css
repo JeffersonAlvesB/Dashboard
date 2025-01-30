@@ -1,0 +1,22 @@
+.modal {
+    position: relative;
+}
+
+.border-animation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #3b82f6;
+    animation: borda-animada 2s ease-in-out forwards;
+}
+
+@keyframes borda-animada {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}

@@ -1,0 +1,26 @@
+.container_box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 6px;
+    background: linear-gradient(90deg, #e4e4e4, #1d0461, #6d50ce, #423666);
+    background-size: 300%;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    animation: border-move 4s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes border-move {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
