@@ -13,7 +13,7 @@
 ---
 
 <h2>✨ Demonstração</h2>
-<p>Visualize o portfólio ao vivo clicando no link abaixo:</p>
+<p>Visualize o Dashboard ao vivo clicando no link abaixo:</p>
 <p align="center">
   <a href="https://jeffboard.netlify.app/" target="_blank">
     <img src="https://img.shields.io/badge/Acessar%20Dashboard-Azul?style=flat-square&logo=googlechrome" alt="Acessar Dashboard">
