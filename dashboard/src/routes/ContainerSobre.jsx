@@ -50,7 +50,7 @@ const ContainerSobre = () => {
                         </a>
                         <a
                             className="hover:opacity-50"
-                            href="https://wa.me/5521975567971"
+                            href="https://wa.link/0dyaqq"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
