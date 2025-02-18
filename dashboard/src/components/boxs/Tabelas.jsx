@@ -15,7 +15,7 @@ const Tabelas = ({ openModal, fecharModal }) => {
         {
             nome: "Jefferson Alves",
             email: "alvesjefferson1288@gmail.com",
-            telefone: "5521975567971",
+            telefone: "5521974101716",
         },
     ]);
 
