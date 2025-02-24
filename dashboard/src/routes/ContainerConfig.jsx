@@ -1,18 +1,24 @@
 import Historico from "../components/historico/Historico";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ContainerConfig = ({ localizacao, nome, id }) => {
     // Estados
     const [exibir, setExibir] = useState(false);
+    const [horaAtual, setHoraAtual] = useState(new Date());
+
+    // Atualiza a hora a cada segundo
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setHoraAtual(new Date());
+        }, 1000);
+        
+        return () => clearInterval(interval);
+    }, []);
+
     // Função que exibe o componente Historico
     const viewHistory = () => {
         setExibir(true);
     };
-
-    // Constantes para guardar a data, hora e minutos
-    const date = new Date();
-    const hora = date.getHours();
-    const minutos = date.getMinutes();
 
     // Função para deslogar do dashboard e voltar para a tela de login
     const ExitPage = () => {
@@ -38,7 +44,7 @@ const ContainerConfig = ({ localizacao, nome, id }) => {
                         <div className="flex justify-between items-center">
                             <span className="text-sm">Horas:</span>
                             <span className="text-lg">
-                                {hora}:{minutos}
+                                {horaAtual.getHours()}:{horaAtual.getMinutes().toString().padStart(2, '0')}
                             </span>
                         </div>
                         <div className="flex justify-between items-center">
