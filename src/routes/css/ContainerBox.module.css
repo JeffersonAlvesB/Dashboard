@@ -1,0 +1,58 @@
+:root {
+    --corContainer: #10062a;
+}
+
+.container_box {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-template-rows: repeat(2, 0fr);
+    gap: 4rem;
+    background-color: var(--corContainer);
+    padding: 2rem;
+}
+
+.clip1,
+.clip2,
+.clip3 {
+    clip-path: path("M0,0 C50,40 150,0 300,10 L300,80 L0,80 Z");
+    background: linear-gradient(to top, #977de9, #7c64ca, #453872);
+    width: 100%;
+    height: 100px;
+}
+
+.clip1 {
+    clip-path: path("M0,0 C50,40 150,0 300,10 L300,80 L0,80 Z");
+}
+.clip2 {
+    clip-path: path("M0,30 C50,40 80,0 300,10 L300,80 L0,80 Z");
+}
+.clip3 {
+    clip-path: path("M0,30 C50,40 30,-10 300,50 L300,80 L0,80 Z");
+}
+
+@media screen and (max-width: 1250px) {
+    .container_box {
+        grid-template-columns: repeat(2, 0fr);
+        grid-template-rows: repeat(2, 0fr);
+    }
+
+    .box_altura {
+        height: 350px !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container_box {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container_box {
+        display: flex;
+        flex-direction: column;
+    }
+}
