@@ -61,7 +61,7 @@
 <ol>
   <li>Clone o repositório:</li>
   <pre>
-    <code>git clone https://github.com/JeffersonAlvesB/dashboard-github.git</code>
+    <code>git clone https://github.com/JeffersonAlvesB/Dashboard.git</code>
   </pre>
   <li>Instale as dependências:</li>
   <pre>
